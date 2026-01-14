@@ -1,7 +1,12 @@
 .venv/
-.env
-data/
 venv/
-logs/
 target/
-.lock
+logs/
+.env
+.user.yml
+uv.lock
+
+__pycache__/
+.DS_Store
+.idea/
+.vscode/
