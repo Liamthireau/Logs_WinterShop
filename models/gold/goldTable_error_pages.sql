@@ -1,9 +1,8 @@
-{{ config(materialized='table') }}
-
-select
-    page_url,
-    count(*) as error_count
-from {{ ref('silverTable') }}
-where http_status >= 400
-group by 1
-order by error_count desc
+SELECT
+    url AS page,
+    COUNT(*) AS nb_errors,
+    COUNT(DISTINCT ip) AS nb_users_impacted
+FROM {{ ref('silvertable') }}
+WHERE status_code >= 400
+GROUP BY url
+ORDER BY nb_errors DESC
