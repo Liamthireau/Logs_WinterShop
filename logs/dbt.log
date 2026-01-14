@@ -160,3 +160,767 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m12:54:45.810876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000164BEF4E810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000164BACD4490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000164BAEC2190>]}
 [0m12:54:45.811874 [debug] [MainThread]: Flushing usage events
 [0m12:54:46.561245 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:31:37.058855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A2EAC52B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A2C930050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A2F796990>]}
+
+
+============================== 15:31:37.249289 | 1b3433ec-d0e4-4b10-81ef-1c67a8b5a03a ==============================
+[0m15:31:37.249289 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:31:37.250135 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\HHCL7294\\Documents\\SupdeVinci\\M2\\datalake\\Logs_WinterShop', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\HHCL7294\\Documents\\SupdeVinci\\M2\\datalake\\Logs_WinterShop\\logs'}
+[0m15:31:38.053894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1b3433ec-d0e4-4b10-81ef-1c67a8b5a03a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A2F159BA0>]}
+[0m15:31:38.138449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1b3433ec-d0e4-4b10-81ef-1c67a8b5a03a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A30D998C0>]}
+[0m15:31:38.160831 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m15:31:38.804168 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:31:38.806356 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:31:38.807417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1b3433ec-d0e4-4b10-81ef-1c67a8b5a03a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A30E17750>]}
+[0m15:31:42.736143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1b3433ec-d0e4-4b10-81ef-1c67a8b5a03a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A313E3C50>]}
+[0m15:31:42.798372 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\manifest.json
+[0m15:31:42.803986 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\semantic_manifest.json
+[0m15:31:43.707154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1b3433ec-d0e4-4b10-81ef-1c67a8b5a03a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A317BB150>]}
+[0m15:31:43.707934 [info ] [MainThread]: Found 1 model, 1 source, 464 macros
+[0m15:31:43.708811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1b3433ec-d0e4-4b10-81ef-1c67a8b5a03a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A3132FC70>]}
+[0m15:31:43.711129 [info ] [MainThread]: 
+[0m15:31:43.711842 [info ] [MainThread]: Concurrency: 24 threads (target='liam')
+[0m15:31:43.712503 [info ] [MainThread]: 
+[0m15:31:43.713492 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:31:43.714945 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:31:51.068115 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:31:51.068945 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "liam", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:31:51.069639 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:31:51.102044 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.032 seconds
+[0m15:31:51.103495 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:31:51.105287 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_liam'
+[0m15:31:51.111059 [debug] [ThreadPool]: Using postgres connection "list_postgres_liam"
+[0m15:31:51.111506 [debug] [ThreadPool]: On list_postgres_liam: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "liam", "connection_name": "list_postgres_liam"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'liam'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'liam'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'liam'
+  
+[0m15:31:51.111914 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:31:51.150990 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.039 seconds
+[0m15:31:51.152539 [debug] [ThreadPool]: On list_postgres_liam: ROLLBACK
+[0m15:31:51.154269 [debug] [ThreadPool]: On list_postgres_liam: Close
+[0m15:31:51.159454 [debug] [MainThread]: Using postgres connection "master"
+[0m15:31:51.159998 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "liam", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m15:31:51.160453 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:31:51.200599 [debug] [MainThread]: SQL status: SELECT 0 in 0.040 seconds
+[0m15:31:51.202240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1b3433ec-d0e4-4b10-81ef-1c67a8b5a03a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A31AED010>]}
+[0m15:31:51.202856 [debug] [MainThread]: On master: ROLLBACK
+[0m15:31:51.204325 [debug] [MainThread]: On master: COMMIT
+[0m15:31:51.204748 [debug] [MainThread]: Using postgres connection "master"
+[0m15:31:51.205104 [debug] [MainThread]: On master: COMMIT
+[0m15:31:51.207808 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m15:31:51.208227 [debug] [MainThread]: On master: Close
+[0m15:31:51.224481 [debug] [Thread-1 (]: Began running node model.logswintershop.silverTable
+[0m15:31:51.225065 [info ] [Thread-1 (]: 1 of 1 START sql table model liam.silverTable .................................. [RUN]
+[0m15:31:51.225982 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.logswintershop.silverTable'
+[0m15:31:51.226389 [debug] [Thread-1 (]: Began compiling node model.logswintershop.silverTable
+[0m15:31:51.233220 [debug] [Thread-1 (]: Writing injected SQL for node "model.logswintershop.silverTable"
+[0m15:31:51.235495 [debug] [Thread-1 (]: Began executing node model.logswintershop.silverTable
+[0m15:31:51.276370 [debug] [Thread-1 (]: Writing runtime sql for node "model.logswintershop.silverTable"
+[0m15:31:51.278654 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:31:51.279178 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "liam", "node_id": "model.logswintershop.silverTable"} */
+
+  
+    
+
+  create  table "postgres"."liam"."silverTable__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT logs, substring(logs FROM '\[(\d{2}/\w{3}/\d{4}:\d{2}:\d{2}:\d{2} [+\-]\d{4})\]') AS timestamp_extrait FROM "postgres"."prod"."bronzeTable"
+  );
+  
+[0m15:31:51.279659 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:31:51.321790 [debug] [Thread-1 (]: SQL status: SELECT 118 in 0.042 seconds
+[0m15:31:51.331247 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:31:51.331653 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "liam", "node_id": "model.logswintershop.silverTable"} */
+alter table "postgres"."liam"."silverTable" rename to "silverTable__dbt_backup"
+[0m15:31:51.333843 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m15:31:51.336783 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:31:51.337187 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "liam", "node_id": "model.logswintershop.silverTable"} */
+alter table "postgres"."liam"."silverTable__dbt_tmp" rename to "silverTable"
+[0m15:31:51.339065 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m15:31:51.355270 [debug] [Thread-1 (]: On model.logswintershop.silverTable: COMMIT
+[0m15:31:51.355740 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:31:51.356097 [debug] [Thread-1 (]: On model.logswintershop.silverTable: COMMIT
+[0m15:31:51.360309 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m15:31:51.367120 [debug] [Thread-1 (]: Applying DROP to: "postgres"."liam"."silverTable__dbt_backup"
+[0m15:31:51.371861 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:31:51.372249 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "liam", "node_id": "model.logswintershop.silverTable"} */
+drop table if exists "postgres"."liam"."silverTable__dbt_backup" cascade
+[0m15:31:51.376196 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.004 seconds
+[0m15:31:51.379111 [debug] [Thread-1 (]: On model.logswintershop.silverTable: Close
+[0m15:31:51.396775 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1b3433ec-d0e4-4b10-81ef-1c67a8b5a03a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A317C3A10>]}
+[0m15:31:51.397644 [info ] [Thread-1 (]: 1 of 1 OK created sql table model liam.silverTable ............................. [[32mSELECT 118[0m in 0.15s]
+[0m15:31:51.398854 [debug] [Thread-1 (]: Finished running node model.logswintershop.silverTable
+[0m15:31:51.402220 [debug] [MainThread]: On master: COMMIT
+[0m15:31:51.402603 [debug] [MainThread]: Using postgres connection "master"
+[0m15:31:51.402904 [debug] [MainThread]: On master: COMMIT
+[0m15:31:51.403193 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:31:51.433760 [debug] [MainThread]: SQL status: COMMIT in 0.030 seconds
+[0m15:31:51.434207 [debug] [MainThread]: On master: Close
+[0m15:31:51.434955 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:31:51.435405 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m15:31:51.435801 [debug] [MainThread]: Connection 'list_postgres_liam' was properly closed.
+[0m15:31:51.436093 [debug] [MainThread]: Connection 'model.logswintershop.silverTable' was properly closed.
+[0m15:31:51.436456 [info ] [MainThread]: 
+[0m15:31:51.437079 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 7.72 seconds (7.72s).
+[0m15:31:51.438217 [debug] [MainThread]: Command end result
+[0m15:31:51.460612 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\manifest.json
+[0m15:31:51.463859 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\semantic_manifest.json
+[0m15:31:51.470442 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\run_results.json
+[0m15:31:51.470853 [info ] [MainThread]: 
+[0m15:31:51.471609 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:31:51.472360 [info ] [MainThread]: 
+[0m15:31:51.473283 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:31:51.475168 [debug] [MainThread]: Command `dbt run` succeeded at 15:31:51.475003 after 14.65 seconds
+[0m15:31:51.475580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A31BCA350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A319E4440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A2D5DEA50>]}
+[0m15:31:51.476009 [debug] [MainThread]: Flushing usage events
+[0m15:31:51.955897 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:32:44.032478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2025192B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E27FB74050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E203883C50>]}
+
+
+============================== 15:32:44.038099 | 573a06b5-6672-406e-9567-ebb0bfcafdba ==============================
+[0m15:32:44.038099 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:32:44.039057 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\HHCL7294\\Documents\\SupdeVinci\\M2\\datalake\\Logs_WinterShop', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --target julien', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\HHCL7294\\Documents\\SupdeVinci\\M2\\datalake\\Logs_WinterShop\\logs'}
+[0m15:32:44.268000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '573a06b5-6672-406e-9567-ebb0bfcafdba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E202BA9BA0>]}
+[0m15:32:44.334852 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '573a06b5-6672-406e-9567-ebb0bfcafdba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E204929480>]}
+[0m15:32:44.336810 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m15:32:44.869905 [debug] [MainThread]: checksum: c6b6ed0afd0fa7469f6dc50271b9972bb9a606be486c4f0c1857eb427acc3954, vars: {}, profile: , target: julien, version: 1.11.2
+[0m15:32:44.983082 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m15:32:44.983829 [debug] [MainThread]: previous checksum: c6b6ed0afd0fa7469f6dc50271b9972bb9a606be486c4f0c1857eb427acc3954, current checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b
+[0m15:32:44.984201 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m15:32:44.984906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '573a06b5-6672-406e-9567-ebb0bfcafdba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E20491CE50>]}
+[0m15:32:46.173942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '573a06b5-6672-406e-9567-ebb0bfcafdba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E204D376B0>]}
+[0m15:32:46.238751 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\manifest.json
+[0m15:32:46.242452 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\semantic_manifest.json
+[0m15:32:46.289322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '573a06b5-6672-406e-9567-ebb0bfcafdba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E20510EB30>]}
+[0m15:32:46.290077 [info ] [MainThread]: Found 1 model, 1 source, 464 macros
+[0m15:32:46.290885 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '573a06b5-6672-406e-9567-ebb0bfcafdba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E204DCFEE0>]}
+[0m15:32:46.293107 [info ] [MainThread]: 
+[0m15:32:46.293825 [info ] [MainThread]: Concurrency: 24 threads (target='julien')
+[0m15:32:46.294455 [info ] [MainThread]: 
+[0m15:32:46.295418 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:32:46.296850 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:32:46.461262 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:32:46.461668 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:32:46.461973 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:32:46.507737 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.046 seconds
+[0m15:32:46.509252 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:32:46.510947 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_julien'
+[0m15:32:46.516699 [debug] [ThreadPool]: Using postgres connection "list_postgres_julien"
+[0m15:32:46.517143 [debug] [ThreadPool]: On list_postgres_julien: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "connection_name": "list_postgres_julien"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'julien'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'julien'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'julien'
+  
+[0m15:32:46.517527 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:32:46.536172 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.019 seconds
+[0m15:32:46.537650 [debug] [ThreadPool]: On list_postgres_julien: ROLLBACK
+[0m15:32:46.539135 [debug] [ThreadPool]: On list_postgres_julien: Close
+[0m15:32:46.543853 [debug] [MainThread]: Using postgres connection "master"
+[0m15:32:46.544329 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m15:32:46.544735 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:32:46.606128 [debug] [MainThread]: SQL status: SELECT 0 in 0.061 seconds
+[0m15:32:46.608485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '573a06b5-6672-406e-9567-ebb0bfcafdba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2051D56D0>]}
+[0m15:32:46.609428 [debug] [MainThread]: On master: ROLLBACK
+[0m15:32:46.611528 [debug] [MainThread]: On master: COMMIT
+[0m15:32:46.612246 [debug] [MainThread]: Using postgres connection "master"
+[0m15:32:46.612879 [debug] [MainThread]: On master: COMMIT
+[0m15:32:46.617074 [debug] [MainThread]: SQL status: COMMIT in 0.003 seconds
+[0m15:32:46.617785 [debug] [MainThread]: On master: Close
+[0m15:32:46.641431 [debug] [Thread-1 (]: Began running node model.logswintershop.silverTable
+[0m15:32:46.642542 [info ] [Thread-1 (]: 1 of 1 START sql table model julien.silverTable ................................ [RUN]
+[0m15:32:46.643995 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.logswintershop.silverTable'
+[0m15:32:46.644784 [debug] [Thread-1 (]: Began compiling node model.logswintershop.silverTable
+[0m15:32:46.658234 [debug] [Thread-1 (]: Writing injected SQL for node "model.logswintershop.silverTable"
+[0m15:32:46.660105 [debug] [Thread-1 (]: Began executing node model.logswintershop.silverTable
+[0m15:32:46.740244 [debug] [Thread-1 (]: Writing runtime sql for node "model.logswintershop.silverTable"
+[0m15:32:46.742239 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:32:46.743097 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "node_id": "model.logswintershop.silverTable"} */
+
+  
+    
+
+  create  table "postgres"."julien"."silverTable__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT logs, substring(logs FROM '\[(\d{2}/\w{3}/\d{4}:\d{2}:\d{2}:\d{2} [+\-]\d{4})\]') AS timestamp_extrait FROM "postgres"."prod"."bronzeTable"
+  );
+  
+[0m15:32:46.743848 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:32:46.772455 [debug] [Thread-1 (]: SQL status: SELECT 118 in 0.029 seconds
+[0m15:32:46.790337 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:32:46.791234 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "node_id": "model.logswintershop.silverTable"} */
+alter table "postgres"."julien"."silverTable" rename to "silverTable__dbt_backup"
+[0m15:32:46.794458 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m15:32:46.800019 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:32:46.800905 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "node_id": "model.logswintershop.silverTable"} */
+alter table "postgres"."julien"."silverTable__dbt_tmp" rename to "silverTable"
+[0m15:32:46.803550 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m15:32:46.835467 [debug] [Thread-1 (]: On model.logswintershop.silverTable: COMMIT
+[0m15:32:46.836293 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:32:46.837216 [debug] [Thread-1 (]: On model.logswintershop.silverTable: COMMIT
+[0m15:32:46.841967 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m15:32:46.854460 [debug] [Thread-1 (]: Applying DROP to: "postgres"."julien"."silverTable__dbt_backup"
+[0m15:32:46.864204 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:32:46.865058 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "node_id": "model.logswintershop.silverTable"} */
+drop table if exists "postgres"."julien"."silverTable__dbt_backup" cascade
+[0m15:32:46.874225 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.008 seconds
+[0m15:32:46.878829 [debug] [Thread-1 (]: On model.logswintershop.silverTable: Close
+[0m15:32:46.883358 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '573a06b5-6672-406e-9567-ebb0bfcafdba', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E205394680>]}
+[0m15:32:46.884715 [info ] [Thread-1 (]: 1 of 1 OK created sql table model julien.silverTable ........................... [[32mSELECT 118[0m in 0.24s]
+[0m15:32:46.886503 [debug] [Thread-1 (]: Finished running node model.logswintershop.silverTable
+[0m15:32:46.889835 [debug] [MainThread]: On master: COMMIT
+[0m15:32:46.890595 [debug] [MainThread]: Using postgres connection "master"
+[0m15:32:46.891256 [debug] [MainThread]: On master: COMMIT
+[0m15:32:46.891907 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:32:46.916590 [debug] [MainThread]: SQL status: COMMIT in 0.025 seconds
+[0m15:32:46.917442 [debug] [MainThread]: On master: Close
+[0m15:32:46.918450 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:32:46.919130 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m15:32:46.919808 [debug] [MainThread]: Connection 'list_postgres_julien' was properly closed.
+[0m15:32:46.920426 [debug] [MainThread]: Connection 'model.logswintershop.silverTable' was properly closed.
+[0m15:32:46.921132 [info ] [MainThread]: 
+[0m15:32:46.922452 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.63 seconds (0.63s).
+[0m15:32:46.924897 [debug] [MainThread]: Command end result
+[0m15:32:46.965452 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\manifest.json
+[0m15:32:46.971274 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\semantic_manifest.json
+[0m15:32:46.984295 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\run_results.json
+[0m15:32:46.985077 [info ] [MainThread]: 
+[0m15:32:46.986157 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:32:46.987239 [info ] [MainThread]: 
+[0m15:32:46.988172 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:32:46.991669 [debug] [MainThread]: Command `dbt run` succeeded at 15:32:46.991319 after 3.12 seconds
+[0m15:32:46.992521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E205008870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E205136210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E2050BB8D0>]}
+[0m15:32:46.993265 [debug] [MainThread]: Flushing usage events
+[0m15:32:47.402551 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:37:51.091754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFB9E92B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AF9850050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFCD5BC50>]}
+
+
+============================== 15:37:51.097461 | a5dbd6c4-04cc-448d-a800-a3cf272a5767 ==============================
+[0m15:37:51.097461 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:37:51.098299 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HHCL7294\\Documents\\SupdeVinci\\M2\\datalake\\Logs_WinterShop', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --target julien', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\HHCL7294\\Documents\\SupdeVinci\\M2\\datalake\\Logs_WinterShop\\logs'}
+[0m15:37:51.307692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a5dbd6c4-04cc-448d-a800-a3cf272a5767', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFC089BA0>]}
+[0m15:37:51.373632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a5dbd6c4-04cc-448d-a800-a3cf272a5767', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFDE09480>]}
+[0m15:37:51.375620 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m15:37:51.907492 [debug] [MainThread]: checksum: c6b6ed0afd0fa7469f6dc50271b9972bb9a606be486c4f0c1857eb427acc3954, vars: {}, profile: , target: julien, version: 1.11.2
+[0m15:37:52.094386 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:37:52.094938 [debug] [MainThread]: Partial parsing: updated file: logswintershop://models\silver\silverTable.sql
+[0m15:37:52.349897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a5dbd6c4-04cc-448d-a800-a3cf272a5767', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFDDFF450>]}
+[0m15:37:52.418315 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\manifest.json
+[0m15:37:52.421648 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\semantic_manifest.json
+[0m15:37:52.464629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a5dbd6c4-04cc-448d-a800-a3cf272a5767', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFCBEED50>]}
+[0m15:37:52.523936 [info ] [MainThread]: Found 1 model, 1 source, 464 macros
+[0m15:37:52.525104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a5dbd6c4-04cc-448d-a800-a3cf272a5767', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFE2BB690>]}
+[0m15:37:52.528651 [info ] [MainThread]: 
+[0m15:37:52.529723 [info ] [MainThread]: Concurrency: 24 threads (target='julien')
+[0m15:37:52.530882 [info ] [MainThread]: 
+[0m15:37:52.532281 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:37:52.534487 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:37:52.715990 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:37:52.716423 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:37:52.716725 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:37:52.738428 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.022 seconds
+[0m15:37:52.739899 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:37:52.741504 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_julien'
+[0m15:37:52.747380 [debug] [ThreadPool]: Using postgres connection "list_postgres_julien"
+[0m15:37:52.747962 [debug] [ThreadPool]: On list_postgres_julien: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "connection_name": "list_postgres_julien"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'julien'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'julien'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'julien'
+  
+[0m15:37:52.748350 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:37:52.780185 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.032 seconds
+[0m15:37:52.781677 [debug] [ThreadPool]: On list_postgres_julien: ROLLBACK
+[0m15:37:52.783227 [debug] [ThreadPool]: On list_postgres_julien: Close
+[0m15:37:52.787881 [debug] [MainThread]: Using postgres connection "master"
+[0m15:37:52.788392 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m15:37:52.788850 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:37:52.806643 [debug] [MainThread]: SQL status: SELECT 0 in 0.018 seconds
+[0m15:37:52.807984 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a5dbd6c4-04cc-448d-a800-a3cf272a5767', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFE79CAE0>]}
+[0m15:37:52.808499 [debug] [MainThread]: On master: ROLLBACK
+[0m15:37:52.809957 [debug] [MainThread]: On master: COMMIT
+[0m15:37:52.810397 [debug] [MainThread]: Using postgres connection "master"
+[0m15:37:52.810717 [debug] [MainThread]: On master: COMMIT
+[0m15:37:52.812687 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m15:37:52.813164 [debug] [MainThread]: On master: Close
+[0m15:37:52.826172 [debug] [Thread-1 (]: Began running node model.logswintershop.silverTable
+[0m15:37:52.826814 [info ] [Thread-1 (]: 1 of 1 START sql table model julien.silverTable ................................ [RUN]
+[0m15:37:52.827856 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.logswintershop.silverTable'
+[0m15:37:52.828544 [debug] [Thread-1 (]: Began compiling node model.logswintershop.silverTable
+[0m15:37:52.839337 [debug] [Thread-1 (]: Writing injected SQL for node "model.logswintershop.silverTable"
+[0m15:37:52.841130 [debug] [Thread-1 (]: Began executing node model.logswintershop.silverTable
+[0m15:37:52.889955 [debug] [Thread-1 (]: Writing runtime sql for node "model.logswintershop.silverTable"
+[0m15:37:52.891243 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:37:52.891826 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "node_id": "model.logswintershop.silverTable"} */
+
+  
+    
+
+  create  table "postgres"."julien"."silverTable__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT logs, substring(logs FROM '\[(\d{2}/[A-Za-z]{3}/\d{4}:\d{2}:\d{2}:\d{2})') AS timestamp_extrait FROM "postgres"."prod"."bronzeTable"
+  );
+  
+[0m15:37:52.892258 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:37:52.921606 [debug] [Thread-1 (]: SQL status: SELECT 118 in 0.029 seconds
+[0m15:37:52.931831 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:37:52.932321 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "node_id": "model.logswintershop.silverTable"} */
+alter table "postgres"."julien"."silverTable" rename to "silverTable__dbt_backup"
+[0m15:37:52.934232 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m15:37:52.937430 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:37:52.937914 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "node_id": "model.logswintershop.silverTable"} */
+alter table "postgres"."julien"."silverTable__dbt_tmp" rename to "silverTable"
+[0m15:37:52.939719 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m15:37:52.956760 [debug] [Thread-1 (]: On model.logswintershop.silverTable: COMMIT
+[0m15:37:52.957262 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:37:52.957637 [debug] [Thread-1 (]: On model.logswintershop.silverTable: COMMIT
+[0m15:37:52.960873 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m15:37:52.967751 [debug] [Thread-1 (]: Applying DROP to: "postgres"."julien"."silverTable__dbt_backup"
+[0m15:37:52.972929 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:37:52.973442 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "node_id": "model.logswintershop.silverTable"} */
+drop table if exists "postgres"."julien"."silverTable__dbt_backup" cascade
+[0m15:37:52.977535 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.004 seconds
+[0m15:37:52.980171 [debug] [Thread-1 (]: On model.logswintershop.silverTable: Close
+[0m15:37:52.983157 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a5dbd6c4-04cc-448d-a800-a3cf272a5767', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFE4DE8D0>]}
+[0m15:37:52.984022 [info ] [Thread-1 (]: 1 of 1 OK created sql table model julien.silverTable ........................... [[32mSELECT 118[0m in 0.15s]
+[0m15:37:52.985306 [debug] [Thread-1 (]: Finished running node model.logswintershop.silverTable
+[0m15:37:52.988568 [debug] [MainThread]: On master: COMMIT
+[0m15:37:52.989016 [debug] [MainThread]: Using postgres connection "master"
+[0m15:37:52.989342 [debug] [MainThread]: On master: COMMIT
+[0m15:37:52.989652 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:37:53.027369 [debug] [MainThread]: SQL status: COMMIT in 0.038 seconds
+[0m15:37:53.028010 [debug] [MainThread]: On master: Close
+[0m15:37:53.028706 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:37:53.029210 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m15:37:53.029604 [debug] [MainThread]: Connection 'list_postgres_julien' was properly closed.
+[0m15:37:53.029941 [debug] [MainThread]: Connection 'model.logswintershop.silverTable' was properly closed.
+[0m15:37:53.030322 [info ] [MainThread]: 
+[0m15:37:53.031024 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 0.50 seconds (0.50s).
+[0m15:37:53.032174 [debug] [MainThread]: Command end result
+[0m15:37:53.051698 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\manifest.json
+[0m15:37:53.055049 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\semantic_manifest.json
+[0m15:37:53.063696 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\run_results.json
+[0m15:37:53.064271 [info ] [MainThread]: 
+[0m15:37:53.065147 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:37:53.065870 [info ] [MainThread]: 
+[0m15:37:53.066542 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:37:53.068199 [debug] [MainThread]: Command `dbt run` succeeded at 15:37:53.068042 after 2.13 seconds
+[0m15:37:53.068629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFE2AB120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFDFD9C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026AFDFD9E50>]}
+[0m15:37:53.069071 [debug] [MainThread]: Flushing usage events
+[0m15:37:53.477253 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:41:38.230791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192C7B892B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192C59F4050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192C8EF3C50>]}
+
+
+============================== 15:41:38.236494 | 9cec1b93-8511-4e0d-8212-4e570f226e10 ==============================
+[0m15:41:38.236494 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:41:38.237337 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HHCL7294\\Documents\\SupdeVinci\\M2\\datalake\\Logs_WinterShop', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run --target julien', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\HHCL7294\\Documents\\SupdeVinci\\M2\\datalake\\Logs_WinterShop\\logs'}
+[0m15:41:38.724261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9cec1b93-8511-4e0d-8212-4e570f226e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192C8219BA0>]}
+[0m15:41:38.790710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9cec1b93-8511-4e0d-8212-4e570f226e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192C8FC9480>]}
+[0m15:41:38.792587 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m15:41:39.700179 [debug] [MainThread]: checksum: c6b6ed0afd0fa7469f6dc50271b9972bb9a606be486c4f0c1857eb427acc3954, vars: {}, profile: , target: julien, version: 1.11.2
+[0m15:41:43.394045 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:41:43.395214 [debug] [MainThread]: Partial parsing: updated file: logswintershop://models\silver\silverTable.sql
+[0m15:41:43.662822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9cec1b93-8511-4e0d-8212-4e570f226e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192C8FBF450>]}
+[0m15:41:43.730730 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\manifest.json
+[0m15:41:43.752701 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\semantic_manifest.json
+[0m15:41:43.797319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9cec1b93-8511-4e0d-8212-4e570f226e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192C8D7ED50>]}
+[0m15:41:43.854641 [info ] [MainThread]: Found 1 model, 1 source, 464 macros
+[0m15:41:43.855812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9cec1b93-8511-4e0d-8212-4e570f226e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192CA50F690>]}
+[0m15:41:43.859386 [info ] [MainThread]: 
+[0m15:41:43.860614 [info ] [MainThread]: Concurrency: 24 threads (target='julien')
+[0m15:41:43.861732 [info ] [MainThread]: 
+[0m15:41:43.863202 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m15:41:43.865011 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres'
+[0m15:41:51.583613 [debug] [ThreadPool]: Using postgres connection "list_postgres"
+[0m15:41:51.584114 [debug] [ThreadPool]: On list_postgres: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "connection_name": "list_postgres"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m15:41:51.584504 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:41:51.607786 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.023 seconds
+[0m15:41:51.609897 [debug] [ThreadPool]: On list_postgres: Close
+[0m15:41:51.611782 [debug] [ThreadPool]: Acquiring new postgres connection 'list_postgres_julien'
+[0m15:41:51.618651 [debug] [ThreadPool]: Using postgres connection "list_postgres_julien"
+[0m15:41:51.619102 [debug] [ThreadPool]: On list_postgres_julien: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "connection_name": "list_postgres_julien"} */
+select
+      'postgres' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'julien'
+    union all
+    select
+      'postgres' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'julien'
+    union all
+    select
+      'postgres' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'julien'
+  
+[0m15:41:51.619458 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:41:51.637376 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.018 seconds
+[0m15:41:51.638787 [debug] [ThreadPool]: On list_postgres_julien: ROLLBACK
+[0m15:41:51.640380 [debug] [ThreadPool]: On list_postgres_julien: Close
+[0m15:41:51.645657 [debug] [MainThread]: Using postgres connection "master"
+[0m15:41:51.646159 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m15:41:51.646611 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:41:51.689433 [debug] [MainThread]: SQL status: SELECT 0 in 0.043 seconds
+[0m15:41:51.690859 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9cec1b93-8511-4e0d-8212-4e570f226e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192CA9F8AE0>]}
+[0m15:41:51.691579 [debug] [MainThread]: On master: ROLLBACK
+[0m15:41:51.693655 [debug] [MainThread]: On master: COMMIT
+[0m15:41:51.694176 [debug] [MainThread]: Using postgres connection "master"
+[0m15:41:51.694632 [debug] [MainThread]: On master: COMMIT
+[0m15:41:51.697078 [debug] [MainThread]: SQL status: COMMIT in 0.002 seconds
+[0m15:41:51.697613 [debug] [MainThread]: On master: Close
+[0m15:41:51.711708 [debug] [Thread-1 (]: Began running node model.logswintershop.silverTable
+[0m15:41:51.712707 [info ] [Thread-1 (]: 1 of 1 START sql table model julien.silverTable ................................ [RUN]
+[0m15:41:51.713778 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.logswintershop.silverTable'
+[0m15:41:51.714492 [debug] [Thread-1 (]: Began compiling node model.logswintershop.silverTable
+[0m15:41:51.723397 [debug] [Thread-1 (]: Writing injected SQL for node "model.logswintershop.silverTable"
+[0m15:41:51.724651 [debug] [Thread-1 (]: Began executing node model.logswintershop.silverTable
+[0m15:41:51.772135 [debug] [Thread-1 (]: Writing runtime sql for node "model.logswintershop.silverTable"
+[0m15:41:51.773317 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:41:51.773864 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "node_id": "model.logswintershop.silverTable"} */
+
+  
+    
+
+  create  table "postgres"."julien"."silverTable__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT
+    logs,
+
+    -- Timestamp (comme tu l'as fait)
+    substring(logs FROM '\[(\d{2}/[A-Za-z]{3}/\d{4}:\d{2}:\d{2}:\d{2})') 
+        AS timestamp_extrait,
+
+    -- Timestamp converti en vrai type timestamp (optionnel mais très utile)
+    to_timestamp(
+        substring(logs FROM '\[(\d{2}/[A-Za-z]{3}/\d{4}:\d{2}:\d{2}:\d{2})'),
+        'DD/Mon/YYYY:HH24:MI:SS'
+    ) AS timestamp_clean,
+
+    -- IP
+    substring(logs FROM '^(\d+\.\d+\.\d+\.\d+)') AS ip,
+
+    -- Méthode HTTP
+    substring(logs FROM '"(GET|POST|PUT|DELETE|HEAD|OPTIONS)') AS http_method,
+
+    -- URL appelée
+    substring(logs FROM '"(?:GET|POST|PUT|DELETE|HEAD|OPTIONS) ([^ ]+)') AS url,
+
+    -- Code HTTP
+    substring(logs FROM '" \d{3} (\d{3})')::int AS status_code,
+
+    -- Taille réponse (bytes)
+    substring(logs FROM '" \d{3} \d{3} (\d+)')::int AS bytes,
+
+    -- Referer
+    substring(logs FROM '"(https?://[^"]+)"') AS referer,
+
+    -- User agent
+    substring(logs FROM '"Mozilla[^"]+"$') AS user_agent,
+
+    -- Device type (mobile / desktop)
+    CASE
+        WHEN logs ILIKE '%iphone%' 
+          OR logs ILIKE '%android%' 
+          OR logs ILIKE '%mobile%' 
+        THEN 'mobile'
+        ELSE 'desktop'
+    END AS device_type,
+
+    -- OS
+    CASE
+        WHEN logs ILIKE '%iphone%' OR logs ILIKE '%ios%' THEN 'iOS'
+        WHEN logs ILIKE '%android%' THEN 'Android'
+        WHEN logs ILIKE '%windows%' THEN 'Windows'
+        WHEN logs ILIKE '%linux%' THEN 'Linux'
+        WHEN logs ILIKE '%mac os%' THEN 'MacOS'
+        ELSE 'Other'
+    END AS os,
+
+    -- Browser
+    CASE
+        WHEN logs ILIKE '%edg/%' THEN 'Edge'
+        WHEN logs ILIKE '%chrome/%' THEN 'Chrome'
+        WHEN logs ILIKE '%firefox/%' OR logs ILIKE '%librewolf%' THEN 'Firefox'
+        WHEN logs ILIKE '%safari/%' THEN 'Safari'
+        ELSE 'Other'
+    END AS browser
+
+FROM "postgres"."prod"."bronzeTable"
+  );
+  
+[0m15:41:51.774403 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:41:51.806112 [debug] [Thread-1 (]: SQL status: SELECT 118 in 0.032 seconds
+[0m15:41:51.817241 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:41:51.817703 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "node_id": "model.logswintershop.silverTable"} */
+alter table "postgres"."julien"."silverTable" rename to "silverTable__dbt_backup"
+[0m15:41:51.819466 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m15:41:51.822437 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:41:51.822890 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "node_id": "model.logswintershop.silverTable"} */
+alter table "postgres"."julien"."silverTable__dbt_tmp" rename to "silverTable"
+[0m15:41:51.824730 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m15:41:51.841842 [debug] [Thread-1 (]: On model.logswintershop.silverTable: COMMIT
+[0m15:41:51.842429 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:41:51.842988 [debug] [Thread-1 (]: On model.logswintershop.silverTable: COMMIT
+[0m15:41:51.847047 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m15:41:51.853639 [debug] [Thread-1 (]: Applying DROP to: "postgres"."julien"."silverTable__dbt_backup"
+[0m15:41:51.858857 [debug] [Thread-1 (]: Using postgres connection "model.logswintershop.silverTable"
+[0m15:41:51.859402 [debug] [Thread-1 (]: On model.logswintershop.silverTable: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "logswintershop", "target_name": "julien", "node_id": "model.logswintershop.silverTable"} */
+drop table if exists "postgres"."julien"."silverTable__dbt_backup" cascade
+[0m15:41:51.862897 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.003 seconds
+[0m15:41:51.865648 [debug] [Thread-1 (]: On model.logswintershop.silverTable: Close
+[0m15:41:51.868638 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9cec1b93-8511-4e0d-8212-4e570f226e10', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192CA72E750>]}
+[0m15:41:51.869426 [info ] [Thread-1 (]: 1 of 1 OK created sql table model julien.silverTable ........................... [[32mSELECT 118[0m in 0.15s]
+[0m15:41:51.870633 [debug] [Thread-1 (]: Finished running node model.logswintershop.silverTable
+[0m15:41:51.873662 [debug] [MainThread]: On master: COMMIT
+[0m15:41:51.874067 [debug] [MainThread]: Using postgres connection "master"
+[0m15:41:51.874405 [debug] [MainThread]: On master: COMMIT
+[0m15:41:51.874698 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:41:51.890584 [debug] [MainThread]: SQL status: COMMIT in 0.016 seconds
+[0m15:41:51.891019 [debug] [MainThread]: On master: Close
+[0m15:41:51.891978 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:41:51.892709 [debug] [MainThread]: Connection 'list_postgres' was properly closed.
+[0m15:41:51.893229 [debug] [MainThread]: Connection 'list_postgres_julien' was properly closed.
+[0m15:41:51.893797 [debug] [MainThread]: Connection 'model.logswintershop.silverTable' was properly closed.
+[0m15:41:51.894309 [info ] [MainThread]: 
+[0m15:41:51.895258 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 8.03 seconds (8.03s).
+[0m15:41:51.896696 [debug] [MainThread]: Command end result
+[0m15:41:51.916150 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\manifest.json
+[0m15:41:51.919437 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\semantic_manifest.json
+[0m15:41:51.926731 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\HHCL7294\Documents\SupdeVinci\M2\datalake\Logs_WinterShop\target\run_results.json
+[0m15:41:51.927312 [info ] [MainThread]: 
+[0m15:41:51.928231 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:41:51.929022 [info ] [MainThread]: 
+[0m15:41:51.929830 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:41:51.931506 [debug] [MainThread]: Command `dbt run` succeeded at 15:41:51.931369 after 13.89 seconds
+[0m15:41:51.931902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192CA4FF120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192CA225C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000192CA225E50>]}
+[0m15:41:51.932279 [debug] [MainThread]: Flushing usage events
+[0m15:41:52.402227 [debug] [MainThread]: An error was encountered while trying to flush usage events
