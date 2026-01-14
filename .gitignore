@@ -1,5 +1,5 @@
-.venv
-#.env
-pyproject.toml
-uv.lock
-.python-version
+.venv/
+.env
+data/
+venv/
+logs/
