@@ -38,7 +38,7 @@ def ingest_logs():
                 line_content = line.strip()
                 if line_content:
                     cur.execute(
-                        f"INSERT INTO {schema}.bronzeTable (logs) VALUES (%s)",
+                        f"INSERT INTO {schema}.bronzetable (logs) VALUES (%s)",
                         (line_content,)
                     )
                     total_lines += 1

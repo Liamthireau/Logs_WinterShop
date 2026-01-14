@@ -1,6 +1,4 @@
 SELECT
-    logs,
-
     -- Timestamp propre directement en format TIMESTAMP
     to_timestamp(
         substring(logs FROM '\[(\d{2}/[A-Za-z]{3}/\d{4}:\d{2}:\d{2}:\d{2})'),
@@ -56,4 +54,4 @@ SELECT
         ELSE 'Other'
     END AS browser
 
-FROM {{ source('prod', 'bronzeTable') }}
+FROM {{ source('prod', 'bronzetable') }}

@@ -3,5 +3,5 @@ version: 2
 sources:
   - name: prod
     tables:
-      - name: bronzeTable
+      - name: bronzetable
         description: "Logs bruts depuis S3"

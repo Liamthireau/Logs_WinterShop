@@ -23,7 +23,7 @@ def create_tables():
 
     # Création des tables
     cur.execute(f"""
-        CREATE TABLE IF NOT EXISTS {schema}.bronzeTable (
+        CREATE TABLE IF NOT EXISTS {schema}.bronzetable (
             logs TEXT
         );
     """)
