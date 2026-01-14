@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: prod
+    tables:
+      - name: bronzeTable
+        description: "Logs bruts depuis S3"

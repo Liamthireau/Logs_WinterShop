@@ -15,7 +15,7 @@ s3 = boto3.client(
 
 # Bucket et répertoire local
 bucket_name = os.getenv("BUCKET_NAME")
-local_dir = os.path.join(os.getcwd(), "data")
+local_dir = os.path.join(os.getcwd(), "../../data")
 
 # Créer le répertoire 'data' à la racine du projet si besoin
 os.makedirs(local_dir, exist_ok=True)
