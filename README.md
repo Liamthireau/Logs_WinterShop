@@ -1,5 +1,5 @@
 Création du .venv :
-- py -3.10 -m venv .venv
+- py -3.11 -m venv .venv
  
 Lancement du projet :
 - .venv\Scripts\Activate.ps1
