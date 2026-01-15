@@ -3,5 +3,3 @@ boto3
 python-dotenv
 psycopg2-binary
 dbt-postgres
-dbt-bigquery
-dbt-snowflake
