@@ -1,42 +1,37 @@
-WITH base AS (
-    SELECT
-        referer,
-        ip
-    FROM {{ ref('silvertable') }}
-    WHERE referer IS NOT NULL
-),
+{{
+    config(
+        materialized='table'
+    )
+}}
 
--- Partie 1 : volumes par referer
-referer_agg AS (
+WITH referer_stats AS (
     SELECT
         'referer' AS source_type,
-        referer AS source_value,
+        referer_domain AS source_value,
+        is_search_engine,
         COUNT(*) AS nb_hits,
         COUNT(DISTINCT ip) AS nb_users
-    FROM base
-    GROUP BY referer
+    FROM {{ ref('silvertable') }}
+    WHERE referer_domain IS NOT NULL
+      AND is_internal_traffic = FALSE
+      AND is_bot = FALSE
+    GROUP BY referer_domain, is_search_engine
 ),
 
--- Partie 2 : requêtes Google
-google_queries AS (
+google_queries_stats AS (
     SELECT
         'google_query' AS source_type,
-        replace(
-            substring(referer FROM 'q=([^&]+)'),
-            '+',
-            ' '
-        ) AS source_value,
+        google_query AS source_value,
+        TRUE AS is_search_engine,
         COUNT(*) AS nb_hits,
         COUNT(DISTINCT ip) AS nb_users
-    FROM base
-    WHERE referer ILIKE '%google.%'
-      AND referer ILIKE '%search%'
-      AND referer ILIKE '%q=%'
-    GROUP BY source_value
+    FROM {{ ref('silvertable') }}
+    WHERE google_query IS NOT NULL
+      AND is_bot = FALSE
+    GROUP BY google_query
 )
 
--- Résultat final
-SELECT * FROM referer_agg
+SELECT * FROM referer_stats
 UNION ALL
-SELECT * FROM google_queries
+SELECT * FROM google_queries_stats
 ORDER BY source_type, nb_hits DESC

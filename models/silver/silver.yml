@@ -2,6 +2,118 @@ version: 2
 
 sources:
   - name: prod
+    schema: prod
     tables:
       - name: bronzetable
-        description: "Logs bruts depuis S3"
+        description: "Logs bruts Apache/Nginx depuis MinIO"
+
+models:
+  - name: silvertable
+    description: "Table Silver - Logs parsés et enrichis, source unique pour toutes les tables Gold"
+    columns:
+      # Colonnes de base
+      - name: log_timestamp
+        description: "Timestamp de la requête"
+        tests:
+          - not_null
+
+      - name: ip
+        description: "Adresse IP du visiteur"
+        tests:
+          - not_null
+
+      - name: user_id
+        description: "Identifiant utilisateur authentifié (NULL si anonyme)"
+
+      - name: http_method
+        description: "Méthode HTTP (GET, POST, PUT, DELETE, etc.)"
+
+      - name: url
+        description: "URL de la requête"
+        tests:
+          - not_null
+
+      - name: status_code
+        description: "Code de statut HTTP (200, 404, 500, etc.)"
+        tests:
+          - not_null
+
+      - name: bytes
+        description: "Taille de la réponse en bytes"
+
+      - name: referer
+        description: "URL de provenance (referer)"
+
+      - name: user_agent
+        description: "User-Agent du navigateur/client"
+
+      # Colonnes dérivées - URL
+      - name: page_category
+        description: "Catégorie de page extraite de l'URL (skis, boots, gloves, etc.)"
+
+      - name: product_name
+        description: "Nom du produit extrait de l'URL"
+
+      - name: internal_search_query
+        description: "Requête de recherche interne sur le site"
+
+      # Colonnes dérivées - Status
+      - name: status_category
+        description: "Catégorie de statut HTTP : success, redirect, client_error, server_error"
+        tests:
+          - accepted_values:
+              values: ['success', 'redirect', 'client_error', 'server_error', 'unknown']
+
+      - name: is_error
+        description: "TRUE si le status code >= 400"
+
+      # Colonnes dérivées - Referer
+      - name: is_google_search
+        description: "TRUE si la visite provient de Google"
+
+      - name: is_search_engine
+        description: "TRUE si la visite provient d'un moteur de recherche (Google, Bing, DuckDuckGo, Yahoo)"
+
+      - name: google_query
+        description: "Requête Google extraite du referer"
+
+      - name: referer_domain
+        description: "Domaine du referer (ex: www.google.com)"
+
+      - name: is_internal_traffic
+        description: "TRUE si le trafic provient du site lui-même"
+
+      # Colonnes dérivées - Device & Browser
+      - name: device_type
+        description: "Type d'appareil : mobile, tablet, tv, desktop"
+        tests:
+          - accepted_values:
+              values: ['mobile', 'tablet', 'tv', 'desktop']
+
+      - name: os
+        description: "Système d'exploitation : iOS, Android, Windows, Linux, MacOS, Other"
+
+      - name: browser
+        description: "Navigateur : Chrome, Firefox, Safari, Edge, Opera, Chromium, Other"
+
+      - name: is_bot
+        description: "TRUE si le visiteur est un bot/crawler"
+
+      # Colonnes dérivées - Temporelles
+      - name: log_date
+        description: "Date de la requête (sans heure)"
+
+      - name: hour_of_day
+        description: "Heure de la journée (0-23)"
+
+      - name: day_of_week
+        description: "Jour de la semaine (0=dimanche, 6=samedi)"
+
+      - name: day_name
+        description: "Nom du jour (Monday, Tuesday, etc.)"
+
+      - name: week_of_year
+        description: "Numéro de semaine dans l'année"
+
+      - name: month
+        description: "Numéro du mois (1-12)"

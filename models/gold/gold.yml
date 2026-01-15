@@ -2,17 +2,22 @@ version: 2
 
 models:
   - name: goldtable_referer
-    description: "Analyse des referer et requêtes Google avec volumes"
+    description: "Analyse des sources de trafic : referers et requêtes Google"
     columns:
       - name: source_type
-        description: "Type de source : referer ou google_query"
+        description: "Type de source : 'referer' ou 'google_query'"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['referer', 'google_query']
+
+      - name: source_value
+        description: "Domaine du referer ou requête Google"
         tests:
           - not_null
 
-      - name: referer_or_query
-        description: "URL du referer ou requête Google"
-        tests:
-          - not_null
+      - name: is_search_engine
+        description: "TRUE si la source est un moteur de recherche"
 
       - name: nb_hits
         description: "Nombre total de requêtes"
@@ -23,13 +28,20 @@ models:
         description: "Nombre d'utilisateurs uniques"
         tests:
           - not_null
+
   - name: goldtable_top_page_traffic
     description: "Pages générant le plus de trafic sur le site"
     columns:
+      - name: page_category
+        description: "Catégorie de la page (skis, boots, etc.)"
+
       - name: page
         description: "URL de la page visitée"
         tests:
           - not_null
+
+      - name: product_name
+        description: "Nom du produit si applicable"
 
       - name: nb_hits
         description: "Nombre total de visites sur la page"
@@ -40,47 +52,61 @@ models:
         description: "Nombre d'utilisateurs uniques ayant visité la page"
         tests:
           - not_null
-  - name: gold_usage_kpis
-    description: "Indicateurs globaux d'usage : trafic horaire, durée moyenne de session, mobile vs desktop"
+
+      - name: total_bytes
+        description: "Volume total de données transférées"
+
+      - name: avg_bytes
+        description: "Volume moyen de données par requête"
+
+  - name: goldtable_usage_kpis
+    description: "Indicateurs globaux d'usage : trafic horaire, durée de session, répartition devices"
     columns:
       - name: min_users_per_hour
         description: "Nombre minimum d'utilisateurs uniques par heure"
-        tests:
-          - not_null
 
       - name: max_users_per_hour
         description: "Nombre maximum d'utilisateurs uniques par heure"
-        tests:
-          - not_null
 
       - name: avg_users_per_hour
         description: "Nombre moyen d'utilisateurs uniques par heure"
-        tests:
-          - not_null
 
       - name: avg_session_duration_seconds
         description: "Durée moyenne d'une session utilisateur en secondes"
-        tests:
-          - not_null
 
       - name: mobile_users
         description: "Nombre d'utilisateurs uniques sur mobile"
-        tests:
-          - not_null
+
+      - name: tablet_users
+        description: "Nombre d'utilisateurs uniques sur tablette"
 
       - name: desktop_users
         description: "Nombre d'utilisateurs uniques sur desktop"
-        tests:
-          - not_null
 
+      - name: tv_users
+        description: "Nombre d'utilisateurs uniques sur TV"
+
+      - name: total_unique_users
+        description: "Nombre total d'utilisateurs uniques (hors bots)"
 
   - name: goldtable_error_pages
     description: "Pages générant le plus d'erreurs HTTP"
     columns:
+      - name: page_category
+        description: "Catégorie de la page"
+
       - name: page
         description: "URL de la page"
         tests:
           - not_null
+
+      - name: status_code
+        description: "Code HTTP de l'erreur (400, 404, 500, etc.)"
+        tests:
+          - not_null
+
+      - name: status_category
+        description: "Catégorie d'erreur : client_error ou server_error"
 
       - name: nb_errors
         description: "Nombre d'erreurs générées par la page"
@@ -88,6 +114,6 @@ models:
           - not_null
 
       - name: nb_users_impacted
-        description: "Nombre d'utilisateurs distincts ayant rencontré une erreur sur cette page"
+        description: "Nombre d'utilisateurs distincts ayant rencontré une erreur"
         tests:
           - not_null
